@@ -17,11 +17,11 @@ public class Repository {
         this.lotes.add(lote);
     }
 
-    public String listarProdutos() {
-        return this.produtos.toString();
+    public ArrayList<Produto> listarProdutos() {
+        return this.produtos;
     }
 
-    public String listarLotes() {
-        return this.lotes.toString();
+    public ArrayList<Lote> listarLotes() {
+        return this.lotes;
     }
 }

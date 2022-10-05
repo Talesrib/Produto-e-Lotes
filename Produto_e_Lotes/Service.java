@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Service {
     private Repository repository;
 
@@ -15,11 +17,11 @@ public class Service {
         this.repository.addLote(lote);
     }
 
-    public String listarProdutos() {
+    public ArrayList<Produto> listarProdutos() {
         return this.repository.listarProdutos();
     }
 
-    public String listarLotes() {
+    public ArrayList<Lote> listarLotes() {
         return this.repository.listarLotes();
     }
 }

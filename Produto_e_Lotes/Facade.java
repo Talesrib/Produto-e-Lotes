@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Facade {
     private Service services;
 
@@ -13,11 +15,11 @@ public class Facade {
         this.services.criarLote(produto, qtd, dataValidade);
     }
 
-    public String listarProdutos() {
+    public ArrayList<Produto> listarProdutos() {
         return this.services.listarProdutos();
     }
 
-    public String listarLotes() {
+    public ArrayList<Lote>listarLotes() {
         return this.services.listarLotes();
     }
 
