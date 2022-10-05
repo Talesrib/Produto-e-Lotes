@@ -15,6 +15,6 @@ public class Produto {
   }
   
   public String toString() {
-    return this.nome + this.fabricante + this.preco;
-  }  
+    return "Nome: " + this.nome + " Fabricante: " + this.fabricante + " preço: " + this.preco;
+  }
 }
